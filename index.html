@@ -4,8 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agenda Telefonica</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    ola mundo
+    <div class="container">
+      <header>
+        <img src="./image/agenda.png" alt="icone de agenda" width="100px" />
+        <h1>Agenda telefonica</h1>
+      </header>
+      <form>
+        <h2>Adicione novo número</h2>
+        <input type="text" placeholder="Nome Completo" required />
+        <input type="number" placeholder="DDD" max="2" min="0" />
+        <input type="number" placeholder="Telefone" max="9" required />
+        <button type="submit">Cadastrar número</button>
+      </form>
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th>Nome:</th>
+            <th>Numero:</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Gabriela de Andrade</td>
+            <td>988247301</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
