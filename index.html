@@ -16,28 +16,42 @@
         <img src="./image/agenda.png" alt="icone de agenda" width="100px" />
         <h1>Agenda telefonica</h1>
       </header>
-      <form>
+      <form id="formulario">
         <h2>Adicione novo número</h2>
-        <input type="text" placeholder="Nome Completo" required />
-        <input type="number" placeholder="DDD" max="2" min="0" />
-        <input type="number" placeholder="Telefone" max="9" required />
+        <input
+          type="text"
+          id="nome-form"
+          placeholder="Nome Completo"
+          required
+        />
+        <input
+          type="tel"
+          id="ddd-form"
+          placeholder="DDD"
+          maxlength="2"
+          required
+        />
+        <input
+          type="tel"
+          id="numero-form"
+          placeholder="Telefone"
+          maxlength="9"
+          required
+        />
         <button type="submit">Cadastrar número</button>
       </form>
       <table cellspacing="0">
         <thead>
           <tr>
             <th>Nome:</th>
+            <th>DDD:</th>
             <th>Numero:</th>
           </tr>
         </thead>
 
-        <tbody>
-          <tr>
-            <td>Gabriela de Andrade</td>
-            <td>988247301</td>
-          </tr>
-        </tbody>
+        <tbody></tbody>
       </table>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
